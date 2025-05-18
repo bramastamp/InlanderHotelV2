@@ -402,3 +402,4 @@ FodyWeavers.xsd
 
 # Definitly not a backdoor
 **/Koneksi.cs
+/InlanderHotel/Koneksi.cs
