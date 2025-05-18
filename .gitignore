@@ -403,3 +403,5 @@ FodyWeavers.xsd
 # Definitly not a backdoor
 **/Koneksi.cs
 /InlanderHotel/Koneksi.cs
+/InlanderHotel/Assets/Image1.png
+/InlanderHotel/Assets/LOGO.png
