@@ -42,61 +42,76 @@
             // 
             // btnHapus
             // 
-            this.btnHapus.Location = new System.Drawing.Point(324, 132);
+            this.btnHapus.BackColor = System.Drawing.Color.Firebrick;
+            this.btnHapus.FlatAppearance.BorderSize = 0;
+            this.btnHapus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHapus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHapus.ForeColor = System.Drawing.Color.White;
+            this.btnHapus.Location = new System.Drawing.Point(337, 26);
             this.btnHapus.Name = "btnHapus";
             this.btnHapus.Size = new System.Drawing.Size(75, 23);
             this.btnHapus.TabIndex = 19;
             this.btnHapus.Text = "Hapus";
-            this.btnHapus.UseVisualStyleBackColor = true;
+            this.btnHapus.UseVisualStyleBackColor = false;
             this.btnHapus.Click += new System.EventHandler(this.btnHapus_Click_1);
             // 
             // btnTambah
             // 
-            this.btnTambah.Location = new System.Drawing.Point(496, 132);
+            this.btnTambah.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.btnTambah.FlatAppearance.BorderSize = 0;
+            this.btnTambah.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTambah.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTambah.ForeColor = System.Drawing.Color.White;
+            this.btnTambah.Location = new System.Drawing.Point(337, 94);
             this.btnTambah.Name = "btnTambah";
             this.btnTambah.Size = new System.Drawing.Size(75, 23);
             this.btnTambah.TabIndex = 18;
             this.btnTambah.Text = "Tambah";
-            this.btnTambah.UseVisualStyleBackColor = true;
+            this.btnTambah.UseVisualStyleBackColor = false;
             this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click_1);
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(410, 132);
+            this.btnEdit.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnEdit.FlatAppearance.BorderSize = 0;
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.ForeColor = System.Drawing.Color.White;
+            this.btnEdit.Location = new System.Drawing.Point(337, 60);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(75, 23);
             this.btnEdit.TabIndex = 17;
             this.btnEdit.Text = "Edit";
-            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click_1);
             // 
             // txtHarga
             // 
-            this.txtHarga.Location = new System.Drawing.Point(423, 92);
+            this.txtHarga.Location = new System.Drawing.Point(113, 96);
             this.txtHarga.Name = "txtHarga";
-            this.txtHarga.Size = new System.Drawing.Size(148, 20);
+            this.txtHarga.Size = new System.Drawing.Size(184, 20);
             this.txtHarga.TabIndex = 16;
             // 
             // cmbTipeKamar
             // 
             this.cmbTipeKamar.FormattingEnabled = true;
-            this.cmbTipeKamar.Location = new System.Drawing.Point(423, 62);
+            this.cmbTipeKamar.Location = new System.Drawing.Point(113, 62);
             this.cmbTipeKamar.Name = "cmbTipeKamar";
-            this.cmbTipeKamar.Size = new System.Drawing.Size(148, 21);
+            this.cmbTipeKamar.Size = new System.Drawing.Size(184, 21);
             this.cmbTipeKamar.TabIndex = 15;
             // 
             // txtNoKamar
             // 
-            this.txtNoKamar.Location = new System.Drawing.Point(423, 28);
+            this.txtNoKamar.Location = new System.Drawing.Point(113, 28);
             this.txtNoKamar.Name = "txtNoKamar";
-            this.txtNoKamar.Size = new System.Drawing.Size(148, 20);
+            this.txtNoKamar.Size = new System.Drawing.Size(184, 20);
             this.txtNoKamar.TabIndex = 14;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(321, 95);
+            this.label3.Location = new System.Drawing.Point(47, 99);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(39, 13);
             this.label3.TabIndex = 13;
@@ -106,7 +121,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(321, 65);
+            this.label2.Location = new System.Drawing.Point(47, 65);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 13);
             this.label2.TabIndex = 12;
@@ -116,7 +131,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(321, 31);
+            this.label1.Location = new System.Drawing.Point(47, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 13);
             this.label1.TabIndex = 11;

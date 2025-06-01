@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnReset = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -52,19 +56,24 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(508, 202);
+            this.btnReset.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.btnReset.FlatAppearance.BorderSize = 0;
+            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.ForeColor = System.Drawing.Color.White;
+            this.btnReset.Location = new System.Drawing.Point(498, 187);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(75, 23);
+            this.btnReset.Size = new System.Drawing.Size(85, 38);
             this.btnReset.TabIndex = 37;
             this.btnReset.Text = "Reset";
-            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(246, 115);
+            this.label7.Location = new System.Drawing.Point(246, 99);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(24, 13);
             this.label7.TabIndex = 36;
@@ -74,7 +83,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(285, 145);
+            this.label6.Location = new System.Drawing.Point(285, 128);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(37, 13);
             this.label6.TabIndex = 35;
@@ -84,7 +93,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(22, 145);
+            this.label5.Location = new System.Drawing.Point(22, 128);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(63, 13);
             this.label5.TabIndex = 34;
@@ -94,7 +103,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(285, 84);
+            this.label4.Location = new System.Drawing.Point(285, 77);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(56, 13);
             this.label4.TabIndex = 33;
@@ -114,7 +123,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(22, 84);
+            this.label2.Location = new System.Drawing.Point(22, 77);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 13);
             this.label2.TabIndex = 31;
@@ -132,96 +141,165 @@
             // 
             // btnCheckOut
             // 
-            this.btnCheckOut.Location = new System.Drawing.Point(413, 202);
+            this.btnCheckOut.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.btnCheckOut.FlatAppearance.BorderSize = 0;
+            this.btnCheckOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCheckOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckOut.ForeColor = System.Drawing.Color.White;
+            this.btnCheckOut.Location = new System.Drawing.Point(409, 187);
             this.btnCheckOut.Name = "btnCheckOut";
-            this.btnCheckOut.Size = new System.Drawing.Size(75, 23);
+            this.btnCheckOut.Size = new System.Drawing.Size(85, 38);
             this.btnCheckOut.TabIndex = 29;
             this.btnCheckOut.Text = "Check-out";
-            this.btnCheckOut.UseVisualStyleBackColor = true;
+            this.btnCheckOut.UseVisualStyleBackColor = false;
             this.btnCheckOut.Click += new System.EventHandler(this.btnCheckOut_Click);
             // 
             // btnTambah
             // 
-            this.btnTambah.Location = new System.Drawing.Point(288, 203);
+            this.btnTambah.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.btnTambah.FlatAppearance.BorderSize = 0;
+            this.btnTambah.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTambah.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTambah.ForeColor = System.Drawing.Color.White;
+            this.btnTambah.Location = new System.Drawing.Point(288, 187);
             this.btnTambah.Name = "btnTambah";
-            this.btnTambah.Size = new System.Drawing.Size(105, 23);
+            this.btnTambah.Size = new System.Drawing.Size(115, 38);
             this.btnTambah.TabIndex = 28;
             this.btnTambah.Text = "Tambah/Check-in";
-            this.btnTambah.UseVisualStyleBackColor = true;
+            this.btnTambah.UseVisualStyleBackColor = false;
             this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click);
             // 
             // btnHapus
             // 
-            this.btnHapus.Location = new System.Drawing.Point(25, 202);
+            this.btnHapus.BackColor = System.Drawing.Color.Firebrick;
+            this.btnHapus.FlatAppearance.BorderSize = 0;
+            this.btnHapus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHapus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHapus.ForeColor = System.Drawing.Color.White;
+            this.btnHapus.Location = new System.Drawing.Point(25, 187);
             this.btnHapus.Name = "btnHapus";
-            this.btnHapus.Size = new System.Drawing.Size(75, 23);
+            this.btnHapus.Size = new System.Drawing.Size(85, 38);
             this.btnHapus.TabIndex = 27;
             this.btnHapus.Text = "Hapus";
-            this.btnHapus.UseVisualStyleBackColor = true;
+            this.btnHapus.UseVisualStyleBackColor = false;
             this.btnHapus.Click += new System.EventHandler(this.btnHapus_Click);
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(159, 202);
+            this.btnEdit.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnEdit.FlatAppearance.BorderSize = 0;
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.ForeColor = System.Drawing.Color.White;
+            this.btnEdit.Location = new System.Drawing.Point(140, 187);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(75, 23);
+            this.btnEdit.Size = new System.Drawing.Size(85, 38);
             this.btnEdit.TabIndex = 26;
             this.btnEdit.Text = "Edit";
-            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // cmbStatusRes
             // 
+            this.cmbStatusRes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cmbStatusRes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbStatusRes.ForeColor = System.Drawing.Color.White;
             this.cmbStatusRes.FormattingEnabled = true;
-            this.cmbStatusRes.Location = new System.Drawing.Point(288, 170);
+            this.cmbStatusRes.Location = new System.Drawing.Point(288, 144);
             this.cmbStatusRes.Name = "cmbStatusRes";
             this.cmbStatusRes.Size = new System.Drawing.Size(121, 21);
             this.cmbStatusRes.TabIndex = 25;
             // 
             // txtTotalHarga
             // 
-            this.txtTotalHarga.Location = new System.Drawing.Point(25, 170);
+            this.txtTotalHarga.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtTotalHarga.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTotalHarga.ForeColor = System.Drawing.Color.White;
+            this.txtTotalHarga.Location = new System.Drawing.Point(25, 144);
             this.txtTotalHarga.Name = "txtTotalHarga";
             this.txtTotalHarga.Size = new System.Drawing.Size(100, 20);
             this.txtTotalHarga.TabIndex = 24;
             // 
             // dtCheckOut
             // 
-            this.dtCheckOut.Location = new System.Drawing.Point(288, 109);
+            this.dtCheckOut.CalendarForeColor = System.Drawing.Color.White;
+            this.dtCheckOut.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dtCheckOut.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dtCheckOut.CalendarTitleForeColor = System.Drawing.Color.White;
+            this.dtCheckOut.Location = new System.Drawing.Point(288, 93);
             this.dtCheckOut.Name = "dtCheckOut";
             this.dtCheckOut.Size = new System.Drawing.Size(200, 20);
             this.dtCheckOut.TabIndex = 23;
             // 
             // dtCheckIn
             // 
-            this.dtCheckIn.Location = new System.Drawing.Point(25, 109);
+            this.dtCheckIn.CalendarForeColor = System.Drawing.Color.White;
+            this.dtCheckIn.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dtCheckIn.CalendarTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dtCheckIn.CalendarTitleForeColor = System.Drawing.Color.White;
+            this.dtCheckIn.Location = new System.Drawing.Point(25, 93);
             this.dtCheckIn.Name = "dtCheckIn";
             this.dtCheckIn.Size = new System.Drawing.Size(200, 20);
             this.dtCheckIn.TabIndex = 22;
             // 
             // cmbKamar
             // 
+            this.cmbKamar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cmbKamar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbKamar.ForeColor = System.Drawing.Color.White;
             this.cmbKamar.FormattingEnabled = true;
-            this.cmbKamar.Location = new System.Drawing.Point(288, 48);
+            this.cmbKamar.Location = new System.Drawing.Point(288, 41);
             this.cmbKamar.Name = "cmbKamar";
             this.cmbKamar.Size = new System.Drawing.Size(121, 21);
             this.cmbKamar.TabIndex = 21;
             // 
             // cmbTamu
             // 
+            this.cmbTamu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cmbTamu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbTamu.ForeColor = System.Drawing.Color.White;
             this.cmbTamu.FormattingEnabled = true;
-            this.cmbTamu.Location = new System.Drawing.Point(25, 48);
+            this.cmbTamu.Location = new System.Drawing.Point(25, 41);
             this.cmbTamu.Name = "cmbTamu";
             this.cmbTamu.Size = new System.Drawing.Size(121, 21);
             this.cmbTamu.TabIndex = 20;
             // 
             // dgvPemesanan
             // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gray;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            this.dgvPemesanan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPemesanan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvPemesanan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPemesanan.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvPemesanan.EnableHeadersVisualStyles = false;
             this.dgvPemesanan.Location = new System.Drawing.Point(25, 235);
             this.dgvPemesanan.Name = "dgvPemesanan";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPemesanan.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvPemesanan.Size = new System.Drawing.Size(558, 194);
             this.dgvPemesanan.TabIndex = 19;
+            this.dgvPemesanan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPemesanan_CellClick_1);
             // 
             // UcPemesanan
             // 

@@ -203,8 +203,7 @@ namespace InlanderHotel
             }
             return -1;
         }
-
-        private void dgvPemesanan_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvPemesanan_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
             {
@@ -305,5 +304,7 @@ namespace InlanderHotel
             cmbStatusRes.Items.Add("Selesai");
             cmbStatusRes.SelectedIndex = 0;
         }
+
+
     }
 }

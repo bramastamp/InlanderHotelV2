@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvTamu = new System.Windows.Forms.DataGridView();
             this.btnBersihkan = new System.Windows.Forms.Button();
             this.btnHapus = new System.Windows.Forms.Button();
@@ -46,22 +50,56 @@
             // 
             // dgvTamu
             // 
-            this.dgvTamu.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gray;
+            this.dgvTamu.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvTamu.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dgvTamu.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvTamu.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTamu.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvTamu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTamu.GridColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.dgvTamu.Location = new System.Drawing.Point(34, 176);
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvTamu.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvTamu.EnableHeadersVisualStyles = false;
+            this.dgvTamu.GridColor = System.Drawing.Color.Black;
+            this.dgvTamu.Location = new System.Drawing.Point(34, 189);
             this.dgvTamu.Name = "dgvTamu";
+            this.dgvTamu.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTamu.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvTamu.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
             this.dgvTamu.Size = new System.Drawing.Size(530, 192);
             this.dgvTamu.TabIndex = 25;
             this.dgvTamu.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTamu_CellClick_1);
             // 
             // btnBersihkan
             // 
-            this.btnBersihkan.BackColor = System.Drawing.SystemColors.Info;
-            this.btnBersihkan.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnBersihkan.Location = new System.Drawing.Point(296, 134);
+            this.btnBersihkan.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnBersihkan.FlatAppearance.BorderSize = 0;
+            this.btnBersihkan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBersihkan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBersihkan.ForeColor = System.Drawing.Color.White;
+            this.btnBersihkan.Location = new System.Drawing.Point(257, 134);
             this.btnBersihkan.Name = "btnBersihkan";
-            this.btnBersihkan.Size = new System.Drawing.Size(75, 23);
+            this.btnBersihkan.Size = new System.Drawing.Size(89, 36);
             this.btnBersihkan.TabIndex = 24;
             this.btnBersihkan.Text = "Bersihkan";
             this.btnBersihkan.UseVisualStyleBackColor = false;
@@ -69,11 +107,14 @@
             // 
             // btnHapus
             // 
-            this.btnHapus.BackColor = System.Drawing.SystemColors.Info;
-            this.btnHapus.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnHapus.Location = new System.Drawing.Point(201, 134);
+            this.btnHapus.BackColor = System.Drawing.Color.Firebrick;
+            this.btnHapus.FlatAppearance.BorderSize = 0;
+            this.btnHapus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHapus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHapus.ForeColor = System.Drawing.Color.White;
+            this.btnHapus.Location = new System.Drawing.Point(148, 134);
             this.btnHapus.Name = "btnHapus";
-            this.btnHapus.Size = new System.Drawing.Size(75, 23);
+            this.btnHapus.Size = new System.Drawing.Size(89, 36);
             this.btnHapus.TabIndex = 23;
             this.btnHapus.Text = "Hapus";
             this.btnHapus.UseVisualStyleBackColor = false;
@@ -81,11 +122,14 @@
             // 
             // btnUbah
             // 
-            this.btnUbah.BackColor = System.Drawing.SystemColors.Info;
-            this.btnUbah.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnUbah.Location = new System.Drawing.Point(394, 134);
+            this.btnUbah.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.btnUbah.FlatAppearance.BorderSize = 0;
+            this.btnUbah.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUbah.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUbah.ForeColor = System.Drawing.Color.White;
+            this.btnUbah.Location = new System.Drawing.Point(366, 134);
             this.btnUbah.Name = "btnUbah";
-            this.btnUbah.Size = new System.Drawing.Size(75, 23);
+            this.btnUbah.Size = new System.Drawing.Size(89, 36);
             this.btnUbah.TabIndex = 22;
             this.btnUbah.Text = "Edit";
             this.btnUbah.UseVisualStyleBackColor = false;
@@ -93,11 +137,15 @@
             // 
             // btnSimpan
             // 
-            this.btnSimpan.BackColor = System.Drawing.SystemColors.Info;
-            this.btnSimpan.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSimpan.Location = new System.Drawing.Point(489, 134);
+            this.btnSimpan.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.btnSimpan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnSimpan.FlatAppearance.BorderSize = 0;
+            this.btnSimpan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSimpan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSimpan.ForeColor = System.Drawing.Color.White;
+            this.btnSimpan.Location = new System.Drawing.Point(475, 134);
             this.btnSimpan.Name = "btnSimpan";
-            this.btnSimpan.Size = new System.Drawing.Size(75, 23);
+            this.btnSimpan.Size = new System.Drawing.Size(89, 36);
             this.btnSimpan.TabIndex = 21;
             this.btnSimpan.Text = "Tambah";
             this.btnSimpan.UseVisualStyleBackColor = false;
@@ -106,77 +154,93 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(391, 78);
+            this.label4.Location = new System.Drawing.Point(363, 65);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(32, 13);
+            this.label4.Size = new System.Drawing.Size(39, 15);
             this.label4.TabIndex = 20;
             this.label4.Text = "Email";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(391, 29);
+            this.label3.Location = new System.Drawing.Point(363, 6);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 13);
+            this.label3.Size = new System.Drawing.Size(74, 15);
             this.label3.TabIndex = 19;
             this.label3.Text = "No. Telepon";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(198, 78);
+            this.label2.Location = new System.Drawing.Point(145, 65);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 13);
+            this.label2.Size = new System.Drawing.Size(45, 15);
             this.label2.TabIndex = 18;
             this.label2.Text = "Alamat";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(198, 29);
+            this.label1.Location = new System.Drawing.Point(145, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(41, 15);
             this.label1.TabIndex = 17;
             this.label1.Text = "Nama";
             // 
             // txtEmail
             // 
-            this.txtEmail.BackColor = System.Drawing.SystemColors.Info;
-            this.txtEmail.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.txtEmail.Location = new System.Drawing.Point(394, 94);
+            this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.ForeColor = System.Drawing.Color.White;
+            this.txtEmail.Location = new System.Drawing.Point(366, 83);
+            this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(170, 20);
+            this.txtEmail.Size = new System.Drawing.Size(198, 30);
             this.txtEmail.TabIndex = 16;
             // 
             // txtNoTelp
             // 
-            this.txtNoTelp.BackColor = System.Drawing.SystemColors.Info;
-            this.txtNoTelp.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.txtNoTelp.Location = new System.Drawing.Point(394, 45);
+            this.txtNoTelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtNoTelp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNoTelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNoTelp.ForeColor = System.Drawing.Color.White;
+            this.txtNoTelp.Location = new System.Drawing.Point(366, 24);
+            this.txtNoTelp.Multiline = true;
             this.txtNoTelp.Name = "txtNoTelp";
-            this.txtNoTelp.Size = new System.Drawing.Size(170, 20);
+            this.txtNoTelp.Size = new System.Drawing.Size(198, 30);
             this.txtNoTelp.TabIndex = 15;
             // 
             // txtAlamat
             // 
-            this.txtAlamat.BackColor = System.Drawing.SystemColors.Info;
-            this.txtAlamat.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.txtAlamat.Location = new System.Drawing.Point(201, 94);
+            this.txtAlamat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtAlamat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAlamat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAlamat.ForeColor = System.Drawing.Color.White;
+            this.txtAlamat.Location = new System.Drawing.Point(148, 83);
+            this.txtAlamat.Multiline = true;
             this.txtAlamat.Name = "txtAlamat";
-            this.txtAlamat.Size = new System.Drawing.Size(170, 20);
+            this.txtAlamat.Size = new System.Drawing.Size(198, 30);
             this.txtAlamat.TabIndex = 14;
             // 
             // txtNama
             // 
-            this.txtNama.BackColor = System.Drawing.SystemColors.Info;
-            this.txtNama.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.txtNama.Location = new System.Drawing.Point(201, 45);
+            this.txtNama.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtNama.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNama.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNama.ForeColor = System.Drawing.Color.White;
+            this.txtNama.Location = new System.Drawing.Point(148, 24);
+            this.txtNama.Multiline = true;
             this.txtNama.Name = "txtNama";
-            this.txtNama.Size = new System.Drawing.Size(170, 20);
+            this.txtNama.Size = new System.Drawing.Size(198, 30);
             this.txtNama.TabIndex = 13;
             // 
             // UcTamu

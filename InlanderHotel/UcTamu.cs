@@ -27,6 +27,8 @@ namespace InlanderHotel
                 SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM Tamu", conn);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
+                dgvTamu.AutoGenerateColumns = true;
+
                 dgvTamu.DataSource = dt;
             }
         }
@@ -124,5 +126,6 @@ namespace InlanderHotel
         {
             ClearForm();
         }
+
     }
 }

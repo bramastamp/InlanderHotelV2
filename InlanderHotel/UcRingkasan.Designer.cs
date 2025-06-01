@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.lblTotalCheckIn = new System.Windows.Forms.Label();
             this.chartCheckIn = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.lblPemasukan = new System.Windows.Forms.Label();
@@ -60,16 +60,26 @@
             // 
             // chartCheckIn
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartCheckIn.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chartCheckIn.Legends.Add(legend2);
+            this.chartCheckIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            chartArea1.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea1.AxisX.TitleForeColor = System.Drawing.Color.White;
+            chartArea1.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White;
+            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.White;
+            chartArea1.AxisY.TitleForeColor = System.Drawing.Color.White;
+            chartArea1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            chartArea1.Name = "ChartArea1";
+            this.chartCheckIn.ChartAreas.Add(chartArea1);
+            legend1.ForeColor = System.Drawing.Color.White;
+            legend1.Name = "Legend1";
+            this.chartCheckIn.Legends.Add(legend1);
             this.chartCheckIn.Location = new System.Drawing.Point(209, 60);
             this.chartCheckIn.Name = "chartCheckIn";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chartCheckIn.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.Color = System.Drawing.Color.DarkGoldenrod;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartCheckIn.Series.Add(series1);
             this.chartCheckIn.Size = new System.Drawing.Size(340, 135);
             this.chartCheckIn.TabIndex = 28;
             this.chartCheckIn.Text = "chart1";
@@ -77,9 +87,10 @@
             // lblPemasukan
             // 
             this.lblPemasukan.AutoSize = true;
+            this.lblPemasukan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPemasukan.Location = new System.Drawing.Point(361, 244);
             this.lblPemasukan.Name = "lblPemasukan";
-            this.lblPemasukan.Size = new System.Drawing.Size(13, 13);
+            this.lblPemasukan.Size = new System.Drawing.Size(19, 20);
             this.lblPemasukan.TabIndex = 27;
             this.lblPemasukan.Text = "0";
             // 
@@ -95,9 +106,10 @@
             // lblTotalCheckOut
             // 
             this.lblTotalCheckOut.AutoSize = true;
+            this.lblTotalCheckOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalCheckOut.Location = new System.Drawing.Point(206, 244);
             this.lblTotalCheckOut.Name = "lblTotalCheckOut";
-            this.lblTotalCheckOut.Size = new System.Drawing.Size(13, 13);
+            this.lblTotalCheckOut.Size = new System.Drawing.Size(19, 20);
             this.lblTotalCheckOut.TabIndex = 25;
             this.lblTotalCheckOut.Text = "0";
             // 
@@ -122,9 +134,10 @@
             // lblKamarDihuni
             // 
             this.lblKamarDihuni.AutoSize = true;
+            this.lblKamarDihuni.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblKamarDihuni.Location = new System.Drawing.Point(51, 244);
             this.lblKamarDihuni.Name = "lblKamarDihuni";
-            this.lblKamarDihuni.Size = new System.Drawing.Size(13, 13);
+            this.lblKamarDihuni.Size = new System.Drawing.Size(19, 20);
             this.lblKamarDihuni.TabIndex = 22;
             this.lblKamarDihuni.Text = "0";
             // 
@@ -140,9 +153,10 @@
             // lblKamarTersedia
             // 
             this.lblKamarTersedia.AutoSize = true;
+            this.lblKamarTersedia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblKamarTersedia.Location = new System.Drawing.Point(51, 182);
             this.lblKamarTersedia.Name = "lblKamarTersedia";
-            this.lblKamarTersedia.Size = new System.Drawing.Size(13, 13);
+            this.lblKamarTersedia.Size = new System.Drawing.Size(19, 20);
             this.lblKamarTersedia.TabIndex = 20;
             this.lblKamarTersedia.Text = "0";
             // 
@@ -158,9 +172,10 @@
             // lblTotalTamu
             // 
             this.lblTotalTamu.AutoSize = true;
+            this.lblTotalTamu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalTamu.Location = new System.Drawing.Point(51, 125);
             this.lblTotalTamu.Name = "lblTotalTamu";
-            this.lblTotalTamu.Size = new System.Drawing.Size(13, 13);
+            this.lblTotalTamu.Size = new System.Drawing.Size(19, 20);
             this.lblTotalTamu.TabIndex = 18;
             this.lblTotalTamu.Text = "0";
             // 
@@ -176,9 +191,10 @@
             // lblTotalKamar
             // 
             this.lblTotalKamar.AutoSize = true;
+            this.lblTotalKamar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalKamar.Location = new System.Drawing.Point(51, 60);
             this.lblTotalKamar.Name = "lblTotalKamar";
-            this.lblTotalKamar.Size = new System.Drawing.Size(13, 13);
+            this.lblTotalKamar.Size = new System.Drawing.Size(19, 20);
             this.lblTotalKamar.TabIndex = 16;
             this.lblTotalKamar.Text = "0";
             // 
